@@ -6,13 +6,25 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Scroll from '../components/Scroll';
 import overLayPic from '../assets/images/overlay.png';
+import ChronoClash from '../assets/images/ChronoClash.jpg';
+import ArduboyRPS from '../assets/images/ArduboyRPS.jpg';
+import Resume from '../assets/Master-Resume-Daniel-Lungaro.pdf';
+import Trunks from '../assets/images/DSC_0820.jpg';
+import Tonton from '../assets/images/DSC_0822.jpg';
+import Iris from '../assets/images/DSC_0823.jpg';
+import config from '../../config';
+
 import { Link } from 'gatsby';
 
 const sections = [
   { id: 'one', bg: require('../assets/images/pic01.jpg') },
   { id: 'two', bg: require('../assets/images/pic02.jpg') },
+  { id: 'twoPointOne', bg: require('../assets/images/picTwoPointOne.jpg') },
   { id: 'three', bg: require('../assets/images/pic03.jpg') },
+  { id: 'four', bg: require('../assets/images/pic04.jpg') },
+  { id: 'five', bg: require('../assets/images/pic05.jpg') },
 ];
+
 const IndexPage = () => (
   <Layout>
     <Header />
@@ -24,14 +36,30 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>Who I am</h2>
+            <h2>So a bit about me...</h2>
           </header>
           <p>
-            Aliquam ante ac id. Adipiscing interdum lorem praesent fusce
-            pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed
-            adipiscing eu amet interdum lorem blandit vis ac commodo aliquet
-            integer vulputate phasellus lorem ipsum dolor lorem magna consequat
-            sed etiam adipiscing interdum.
+            After playing tons of Macromedia Flash games and watching Flash
+            movies on Newgrounds when I was a kid, I knew I needed to get my
+            hands on it. Once I did, a slew of poorly drawn games was produced,
+            ranging the gamut from a Metal Gear Solid themed memory puzzle game
+            to a turn-based fighting system pitting Ryu from Street Fighter
+            against a Revenant from Doom. While none of the games would ever win
+            any awards, it sparked my interest in coding.
+            <br />
+            <br />
+            After graduating with a Computer Science Degree from SUNY Albany, I
+            went in to the Marine Corps as an officer. This led to an endless
+            barrage of "Lt. Dan" jokes... I still don't know if I've recovered.
+            I now currently work at
+            <a href="https://www.fuseintegration.com/"> Fuse Integration </a>
+            as my first software engineer position, and I'm ecstatic to see
+            where my career leads!
+            <br />
+            <br />
+            <a href={Resume} target="_blank">
+              Click here for resume
+            </a>
           </p>
         </div>
         <Scroll type="id" element="two">
@@ -49,13 +77,37 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>Stuff I do</h2>
+            <h2>Software Projects</h2>
           </header>
+          <h3>Chrono Clash Deck Builder</h3>
+          <a
+            href="https://chronoclashdeckbuilder.azurewebsites.net/"
+            target="_blank"
+          >
+            <img
+              src={ChronoClash}
+              alt="Chrono Clash"
+              height="auto"
+              width="100%"
+            />
+          </a>
           <p>
-            Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum
-            lorem blandit vis ac commodo aliquet vulputate.
+            A deck builder for the Chrono Clash Card game. Built with C#, SQL,
+            and Razor with an MVC framework deployed on Azure.
           </p>
-          <ul className="icons-grid">
+          <h3>Arduboy Rock Paper Scissors</h3>
+          <a href="https://github.com/Zami77/Arduboy_RPS" target="_blank">
+            <img
+              src={ArduboyRPS}
+              alt="Arduboy RPS"
+              height="auto"
+              width="100%"
+            />
+          </a>
+          <p>
+            A simple rock paper scissors game programmed in C for the Arduboy.
+          </p>
+          {/* <ul className="icons-grid">
             <li>
               <span className="icon major fa-camera-retro" />
               <h3>Photography</h3>
@@ -72,7 +124,52 @@ const IndexPage = () => (
               <span className="icon major fa-coffee" />
               <h3>Sipping Coffee</h3>
             </li>
-          </ul>
+          </ul> */}
+        </div>
+        <Scroll type="id" element="three">
+          <a href="#twoPointOne" className="goto-next ">
+            Next
+          </a>
+        </Scroll>
+      </div>
+    </section>
+
+    <section id="twoPointOne" className="main special">
+      <div className="container">
+        <span className="image fit primary">
+          <img src={sections[2].bg} alt="" />
+        </span>
+        <div className="content">
+          <header className="major">
+            <h2>Languages and Frameworks</h2>
+          </header>
+          <p>
+            (In Descending Familiarity)
+            <br />
+            <div className="row">
+              <div className="col-6 col-12-medium">
+                <h5>Languages</h5>
+                <ul>
+                  <li>C#</li>
+                  <li>C/C++</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>Assembly</li>
+                </ul>
+              </div>
+              <div className="col-6 col-12-medium">
+                <h5>Frameworks</h5>
+                <ul>
+                  <li>MVC</li>
+                  <li>ASP.NET Core</li>
+                  <li>Bootstrap</li>
+                  <li>React</li>
+                  <li>Gatsby</li>
+                </ul>
+              </div>
+            </div>
+          </p>
         </div>
         <Scroll type="id" element="three">
           <a href="#three" className="goto-next ">
@@ -85,18 +182,119 @@ const IndexPage = () => (
     <section id="three" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src={sections[2].bg} alt="" />
+          <img src={sections[3].bg} alt="" />
+        </span>
+        <div className="content">
+          <header className="major">
+            <h2>Music Projects</h2>
+          </header>
+          <p>
+            <h3>Soundcloud - Straying Minds</h3>
+            <iframe
+              width="100%"
+              height="450"
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1070844544&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            ></iframe>
+            <h3>RushRocks77 Youtube Channel</h3>
+            <iframe
+              height="450"
+              width="100%"
+              src="https://www.youtube.com/embed?listType=user_uploads&list=RushRocks77"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </p>
+        </div>
+        <Scroll type="id" element="four">
+          <a href="#four" className="goto-next ">
+            Next
+          </a>
+        </Scroll>
+      </div>
+    </section>
+
+    <section id="four" className="main special">
+      <div className="container">
+        <span className="image fit primary">
+          <img src={sections[4].bg} alt="" />
+        </span>
+        <div className="content">
+          <header className="major">
+            <h2>Video Games, Comics, and Nerd Stuff</h2>
+          </header>
+          <p>
+            I have an irresponsibly large collection of Video Games, Comic
+            Books, Board Games, Card Games, Figures etc...
+            <br />
+            <a href="https://cloud.collectorz.com/zami77/games" target="_blank">
+              Video Game Collection
+            </a>
+            <br />
+            <a
+              href="https://cloud.collectorz.com/zami77/comics"
+              target="_blank"
+            >
+              Comic Book Collection
+            </a>
+            <br />
+            <br />
+            <h3>Zen-Oh Button TCG Youtube Channel</h3>
+            Videos about the Dragon Ball Super Card Game
+            <iframe
+              width="100%"
+              height="450"
+              src="http://www.youtube.com/embed/videoseries?list=UUl6IREjc_87iwbxgV9_4P0g"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </p>
+        </div>
+        <Scroll type="id" element="five">
+          <a href="#five" className="goto-next ">
+            Next
+          </a>
+        </Scroll>
+      </div>
+    </section>
+
+    <section id="five" className="main special">
+      <div className="container">
+        <span className="image fit primary">
+          <img src={sections[5].bg} alt="" />
         </span>
         <div className="content">
           <header className="major">
             <h2>One more thing</h2>
           </header>
           <p>
-            Aliquam ante ac id. Adipiscing interdum lorem praesent fusce
-            pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed
-            adipiscing eu amet interdum lorem blandit vis ac commodo aliquet
-            integer vulputate phasellus lorem ipsum dolor lorem magna consequat
-            sed etiam adipiscing interdum.
+            All the photos on the site were taken either by me or my fiancee,
+            most likely her if they're any good! Below are some pictures of my
+            favorite people/cats in life
+            <br />
+            <br />
+            <br />
+            <p>
+              <h3>Iris</h3>
+              <img src={Iris} height="auto" width="100%" />
+              My favorite picture
+              <br />
+            </p>
+            <p>
+              <h3>Trunks</h3>
+              <img src={Trunks} height="auto" width="100%" />
+              Doing what he does best
+              <br />
+            </p>
+            <p>
+              <h3>Tonton</h3>
+              <img src={Tonton} height="auto" width="100%" />
+              Caught in the act of mayhem
+              <br />
+            </p>
           </p>
         </div>
         <Scroll type="id" element="footer">
@@ -112,38 +310,24 @@ const IndexPage = () => (
         <header className="major">
           <h2>Get in touch</h2>
         </header>
-        <form method="post" action="#">
-          <div className="row gtr-uniform">
-            <div className="col-6 col-12-xsmall">
-              <input type="text" name="name" id="name" placeholder="Name" />
-            </div>
-            <div className="col-6 col-12-xsmall">
-              <input type="email" name="email" id="email" placeholder="Email" />
-            </div>
-            <div className="col-12">
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Message"
-                rows="4"
-              />
-            </div>
-            <div className="col-12">
-              <ul className="actions special">
-                <li>
-                  <input
-                    type="submit"
-                    value="Send Message"
-                    className="primary"
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </form>
-        <Link to="/Elements"> Check out Elements page</Link>
+        Please feel free to contact me via email or facebook, or check out my
+        GitHub from the link below. Thanks for checking out the site!
+        <br />
+        <ul className="icons">
+          {config.socialLinks.map(social => {
+            const { icon, name, url } = social;
+            return (
+              <li key={url}>
+                <br />
+                <a href={url} className={`icon alt ${icon} fa-2x`}>
+                  <span className="label">{name}</span>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+        <Footer />
       </div>
-      <Footer />
     </section>
 
     <Scrollspy
