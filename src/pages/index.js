@@ -9,6 +9,7 @@ import overLayPic from '../assets/images/overlay.png';
 import ChronoClash from '../assets/images/ChronoClash.jpg';
 import ArduboyRPS from '../assets/images/ArduboyRPS.jpg';
 import Resume from '../assets/Master-Resume-Daniel-Lungaro.pdf';
+import Firepower from '../assets/images/DSC_0126.jpg';
 import Trunks from '../assets/images/DSC_0820.jpg';
 import Tonton from '../assets/images/DSC_0822.jpg';
 import Iris from '../assets/images/DSC_0823.jpg';
@@ -18,7 +19,7 @@ import { Link } from 'gatsby';
 
 const sections = [
   { id: 'one', bg: require('../assets/images/pic01.jpg') },
-  { id: 'two', bg: require('../assets/images/pic02.jpg') },
+  { id: 'two', bg: require('../assets/images/pic04Alt.jpg') },
   { id: 'twoPointOne', bg: require('../assets/images/picTwoPointOne.jpg') },
   { id: 'three', bg: require('../assets/images/pic03.jpg') },
   { id: 'four', bg: require('../assets/images/pic04.jpg') },
@@ -28,7 +29,6 @@ const sections = [
 const IndexPage = () => (
   <Layout>
     <Header />
-
     <section id="one" className="main special">
       <div className="container">
         <span className="image fit primary">
@@ -126,7 +126,7 @@ const IndexPage = () => (
             </li>
           </ul> */}
         </div>
-        <Scroll type="id" element="three">
+        <Scroll type="id" element="twoPointOne">
           <a href="#twoPointOne" className="goto-next ">
             Next
           </a>
@@ -241,8 +241,14 @@ const IndexPage = () => (
             </a>
             <br />
             <br />
+            <br />
+            <h3>My Pinball - Firepower</h3>
+            <img src={Firepower} height="auto" width="100%" />
+            <br />
+            <br />
+            <br />
             <h3>Zen-Oh Button TCG Youtube Channel</h3>
-            Videos about the Dragon Ball Super Card Game
+            My youtube channel with videos about the Dragon Ball Super Card Game
             <iframe
               width="100%"
               height="450"

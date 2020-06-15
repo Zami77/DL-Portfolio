@@ -6,6 +6,11 @@ export default function Header() {
   return (
     <section id="header">
       <header className="major">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <h1>{config.heading}</h1>
         <p>{config.subHeading}</p>
       </header>
