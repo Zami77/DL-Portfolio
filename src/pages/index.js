@@ -13,6 +13,7 @@ import Firepower from '../assets/images/DSC_0126.jpg';
 import Trunks from '../assets/images/DSC_0820.jpg';
 import Tonton from '../assets/images/DSC_0822.jpg';
 import Iris from '../assets/images/DSC_0823.jpg';
+import Snail from '../assets/images/happy-snail-2.png';
 import config from '../../config';
 
 import { Link } from 'gatsby';
@@ -80,10 +81,7 @@ const IndexPage = () => (
             <h2>Software Projects</h2>
           </header>
           <h3>Chrono Clash Deck Builder</h3>
-          <a
-            href="https://chronoclashdeckbuilder.azurewebsites.net/"
-            target="_blank"
-          >
+          <a href="https://chronoclashdecks.azurewebsites.net/" target="_blank">
             <img
               src={ChronoClash}
               alt="Chrono Clash"
@@ -95,6 +93,7 @@ const IndexPage = () => (
             A deck builder for the Chrono Clash Card game. Built with C#, SQL,
             and Razor with an MVC framework deployed on Azure.
           </p>
+
           <h3>Arduboy Rock Paper Scissors</h3>
           <a href="https://github.com/Zami77/Arduboy_RPS" target="_blank">
             <img
@@ -107,6 +106,11 @@ const IndexPage = () => (
           <p>
             A simple rock paper scissors game programmed in C for the Arduboy.
           </p>
+          <h3>Happy Snail Programming</h3>
+          <a href="https://happysnailprogramming.com/" target="_blank">
+            <img src={Snail} alt="Happy Snail" height="auto" width="75%" />
+          </a>
+          <p>Programming articles and tutorials deployed via Wordpress.</p>
           {/* <ul className="icons-grid">
             <li>
               <span className="icon major fa-camera-retro" />

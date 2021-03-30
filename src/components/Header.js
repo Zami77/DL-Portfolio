@@ -1,5 +1,6 @@
 import React from 'react';
 import Scroll from './Scroll';
+import Logo from '../assets/images/DEL-Logo.png';
 import config from '../../config';
 
 export default function Header() {
@@ -13,6 +14,8 @@ export default function Header() {
         <br />
         <h1>{config.heading}</h1>
         <p>{config.subHeading}</p>
+
+        <img src={Logo} height="30%" width="30%"></img>
       </header>
       <div className="container">
         <ul className="actions special">
