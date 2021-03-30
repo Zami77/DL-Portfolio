@@ -9,11 +9,12 @@ import overLayPic from '../assets/images/overlay.png';
 import ChronoClash from '../assets/images/ChronoClash.jpg';
 import ArduboyRPS from '../assets/images/ArduboyRPS.jpg';
 import Resume from '../assets/Master-Resume-Daniel-Lungaro.pdf';
-import Firepower from '../assets/images/DSC_0126.jpg';
+import Turtles from '../assets/images/Turtles_Pinball.jpg'
 import Trunks from '../assets/images/DSC_0820.jpg';
 import Tonton from '../assets/images/DSC_0822.jpg';
 import Iris from '../assets/images/DSC_0823.jpg';
 import Snail from '../assets/images/happy-snail-2.png';
+import FractalBurst from '../assets/images/Home_Screen_Screenshot.png'
 import config from '../../config';
 
 import { Link } from 'gatsby';
@@ -54,7 +55,8 @@ const IndexPage = () => (
             barrage of "Lt. Dan" jokes... I still don't know if I've recovered.
             I now currently work at
             <a href="https://www.fuseintegration.com/"> Fuse Integration </a>
-            as my first software engineer position, and I'm ecstatic to see
+            as my first software engineer position. I'm also pursuing a Master's Degree 
+            in Computer Science from CSU Fullerton. I'm ecstatic to see
             where my career leads!
             <br />
             <br />
@@ -94,6 +96,20 @@ const IndexPage = () => (
             and Razor with an MVC framework deployed on Azure.
           </p>
 
+          <h3>Fractal Burst</h3>
+          <a href="https://zami77.itch.io/fractal-burst" target="_blank">
+            <img
+              src={FractalBurst}
+              alt="Fractal Burst"
+              height="auto"
+              width="100%"
+            />
+          </a>
+          <p>
+            A short 2D Sci-Fi RPG based on altering time. 
+            Created for the 6th annual Driftwood Gaming Jam.
+            Developed with RPG Maker MZ and Javascript.
+          </p>
           <h3>Arduboy Rock Paper Scissors</h3>
           <a href="https://github.com/Zami77/Arduboy_RPS" target="_blank">
             <img
@@ -246,8 +262,8 @@ const IndexPage = () => (
             <br />
             <br />
             <br />
-            <h3>My Pinball - Firepower</h3>
-            <img src={Firepower} height="auto" width="100%" />
+            <h3>My Pinball - TMNT</h3>
+            <img src={Turtles} height="auto" width="100%" />
             <br />
             <br />
             <br />
