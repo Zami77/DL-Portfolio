@@ -15,6 +15,7 @@ import Tonton from '../assets/images/DSC_0822.jpg';
 import Iris from '../assets/images/DSC_0823.jpg';
 import Snail from '../assets/images/happy-snail-2.png';
 import FractalBurst from '../assets/images/Home_Screen_Screenshot.png'
+import VHunterPuzzlerDx from '../assets/images/V-Hunter Puzzler Dx_AI Title Card.png'
 import config from '../../config';
 
 import { Link } from 'gatsby';
@@ -53,11 +54,16 @@ const IndexPage = () => (
             After graduating with a Computer Science Degree from SUNY Albany, I
             went in to the Marine Corps as an officer. This led to an endless
             barrage of "Lt. Dan" jokes... I still don't know if I've recovered.
-            I now currently work at
+            <br />
+            <br />
+            After my 4 year contract, I started as a software engineer I at
             <a href="https://www.fuseintegration.com/"> Fuse Integration </a>
-            as my first software engineer position. I'm also pursuing a Master's Degree 
-            in Computer Science from CSU Fullerton. I'm ecstatic to see
-            where my career leads!
+            . Next, I joined MGM resorts as a software engineer II,
+            building backend systems related to housekeeping and room upgrades. All the while, I pursued my Master's
+            in Computer Science, graduating May 2022.
+            <br />
+            <br />
+            I have recently started working for Amazon as an SDE 2 in September 2022. It's been an exciting journey the past few years!
             <br />
             <br />
             <a href={Resume} target="_blank">
@@ -95,22 +101,26 @@ const IndexPage = () => (
             A deck builder for the Chrono Clash Card game. Built with C#, SQL,
             and Razor with an MVC framework deployed on Azure.
           </p>
-
-          <h3>Fractal Burst</h3>
-          <a href="https://zami77.itch.io/fractal-burst" target="_blank">
+          <br />
+          <h3>V-Hunter Puzzler Dx</h3>
+          <a href="https://yatchstudios.itch.io/v-hunter-puzzler-dx" target="_blank">
             <img
-              src={FractalBurst}
-              alt="Fractal Burst"
+              src={VHunterPuzzlerDx}
+              alt="V-Hunter Puzzler Dx"
               height="auto"
               width="100%"
             />
           </a>
+          <h3>4th place winner of Mini Jam 118!</h3 >
+          <br />
           <p>
-            A short 2D Sci-Fi RPG based on altering time. 
-            Created for the 6th annual Driftwood Gaming Jam.
-            Developed with RPG Maker MZ and Javascript.
+          V-Hunter Puzzler Dx is a grid turn-based action puzzler game where you need to slay all the monsters in a level to progress. 
+          Each monster has different attack and movement patterns to do its best to stop V-Hunter. 
+          Help V-Hunter rid the world of monsters and vampires!
+          Developed in the Godot Game Engine.
           </p>
-          <h3>Arduboy Rock Paper Scissors</h3>
+          <br />
+          {/* <h3>Arduboy Rock Paper Scissors</h3>
           <a href="https://github.com/Zami77/Arduboy_RPS" target="_blank">
             <img
               src={ArduboyRPS}
@@ -121,7 +131,7 @@ const IndexPage = () => (
           </a>
           <p>
             A simple rock paper scissors game programmed in C for the Arduboy.
-          </p>
+          </p> */}
           <h3>Happy Snail Programming</h3>
           <a href="https://happysnailprogramming.com/" target="_blank">
             <img src={Snail} alt="Happy Snail" height="auto" width="75%" />
@@ -236,7 +246,7 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="four" className="main special">
+    {/* <section id="four" className="main special">
       <div className="container">
         <span className="image fit primary">
           <img src={sections[4].bg} alt="" />
@@ -285,7 +295,7 @@ const IndexPage = () => (
           </a>
         </Scroll>
       </div>
-    </section>
+    </section> */}
 
     <section id="five" className="main special">
       <div className="container">
